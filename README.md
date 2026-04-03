@@ -1,4 +1,4 @@
-## 🚀 Overview
+## Overview
 
 This project is a library management system developed in Java using JDBC and PostgreSQL. It follows a layered architecture to ensure clean separation of concerns, maintainability, and scalability.
 
@@ -6,11 +6,11 @@ The application allows managing books, searching by title, and handling loans an
 
 The project is in Spanish.
 
-## 🧠 Architecture
+## Architecture
 
 The project is structured using a layered architecture:
 
-### 🟢 Model
+### Model
 Represents database entities as Java objects:
 - `Libro` (Book)
 - `Usuario` (User)
@@ -20,7 +20,7 @@ These classes only store data (POJOs) and do not contain business logic.
 
 ---
 
-### 🔵 Repository
+### Repository
 Handles database access using JDBC:
 - Executes SQL queries (CRUD operations)
 - Maps database rows to Java objects
@@ -32,7 +32,7 @@ Main classes:
 
 ---
 
-### 🟡 Service
+### Service
 Contains business logic and rules:
 - Validates input data
 - Controls application logic (e.g., checking availability before borrowing)
@@ -45,25 +45,23 @@ Main classes:
 
 ---
 
-### 🔴 Database
+### Database
 - PostgreSQL database
 - Managed through JDBC (`Db.java`)
 - Includes constraints to ensure data integrity (e.g., preventing multiple active loans for the same book)
 
 ---
 
-## ⚙️ Features
+## Features
 
-- 📚 Book management (Create, Read, Update, Delete)
-- 🔍 Search books by title
-- 🔄 Loan system (borrow and return books)
-- ✅ Availability control (no duplicate active loans)
-- 💥 Transaction management (commit & rollback)
-- 🧪 Demo classes for testing functionality
+- Book management (Create, Read, Update, Delete)
+- Search books by title
+- Loan system (borrow and return books)
+- Availability control (no duplicate active loans)
+- Transaction management (commit & rollback)
+- Demo classes for testing functionality
 
----
-
-## 🔁 Transaction Flow
+## Transaction Flow
 
 When a book is borrowed:
 
@@ -78,7 +76,7 @@ If any step fails:
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - Java
 - JDBC
@@ -87,7 +85,7 @@ If any step fails:
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 1. Configure your database in `db.properties`
 2. Execute the SQL script to create tables
@@ -98,7 +96,7 @@ If any step fails:
    - `PrestamoDemo` → loan system
    - `TxDemo` → transaction demo
 
-## 🎯 Purpose
+## Purpose
 
 This project was built to practice core backend development concepts:
 - Layered architecture
@@ -106,8 +104,6 @@ This project was built to practice core backend development concepts:
 - Transaction management
 - Clean and maintainable code structure
 
----
-
-## 📌 Notes
+## Notes
 
 This is a learning-focused project designed to understand how backend systems work without frameworks like Spring.
