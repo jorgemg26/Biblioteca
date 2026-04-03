@@ -90,11 +90,11 @@ If any step fails:
 1. Configure your database in `db.properties`
 2. Execute the SQL script to create tables
 3. Run any of the demo classes:
-   - `Main` → basic usage and search
-   - `CrudDemo` → CRUD operations
-   - `CapasDemo` → service layer usage
-   - `PrestamoDemo` → loan system
-   - `TxDemo` → transaction demo
+   - `Main` -> basic usage and search
+   - `CrudDemo` -> CRUD operations
+   - `CapasDemo` -> service layer usage
+   - `PrestamoDemo` -> loan system
+   - `TxDemo` -> transaction demo
 
 ## Purpose
 
